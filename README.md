@@ -12,39 +12,38 @@
   - `js/` - JavaScript файлы
   - `fonts/` - шрифты
 
-## Локальная разработка
+## Просмотр локально
 
 Просто откройте `index.html` в браузере или используйте локальный сервер:
 
 ```bash
+# Python
 python -m http.server 8000
-# или
+
+# Node.js (если установлен)
+npx serve .
+
+# PHP (если нужен)
 php -S localhost:8000
 ```
 
-## Деплой на Heroku
+## Деплой
 
-1. Установите [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+### GitHub Pages (рекомендуется - бесплатно)
 
-2. Логин в Heroku:
-```bash
-heroku login
-```
+1. Зайдите в репозиторий на GitHub
+2. Settings → Pages
+3. Source: "Deploy from a branch"
+4. Branch: "master" или "main"
+5. Save
 
-3. Создайте приложение:
-```bash
-heroku create your-app-name
-```
+Сайт будет доступен по адресу: `https://slavasazhin83.github.io/aphiya_site/`
 
-4. Деплой:
-```bash
-git push heroku main
-```
+### Альтернативы
 
-5. Откройте сайт:
-```bash
-heroku open
-```
+- **Netlify**: Подключите GitHub репозиторий на netlify.com
+- **Vercel**: Подключите GitHub репозиторий на vercel.com
+- **Surge.sh**: `npm install -g surge` → `surge` в папке проекта
 
 ## Технологии
 
@@ -52,4 +51,4 @@ heroku open
 - Responsive design
 - Font Awesome иконки
 - Google Fonts (Roboto, Montserrat, Open Sans)
-- PHP (для Heroku) 
+- Статический сайт (без серверной части) 
