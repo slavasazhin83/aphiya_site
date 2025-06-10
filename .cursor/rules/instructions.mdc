@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+— Don't add Russian characters to any files, logs or database.
+— DO NOT ADD RUSSIAN TEXT ANYWHERE!!! RUSSIAN SYMBOLS ARE STRICTLY FORBIDDEN IN DOCS, CODE AND DATABASE!!! Но мне отвечай на русском в чате.
+— Never, under any circumstances, add Russian characters or Cyrillic symbols to source code files, comments, translations, logs, or databases. This is a CRITICAL requirement. All code must use only ASCII/Latin characters. Even when adding comments, use only English.
+— Before submitting any changes to files, double-check to ensure no Russian symbols have been accidentally included.
+— All code comments must be written in English only, regardless of their purpose or context.
